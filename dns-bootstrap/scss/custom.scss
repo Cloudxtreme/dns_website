@@ -1,0 +1,49 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.tiny-noimage-nav {
+  background-color: white;
+  box-shadow: 0px 4px 8px #888888;
+}
+
+.navbar {
+  left: 0;
+  right: 0;
+  z-index: $zindex-fixed;
+  margin: 0;
+  padding: 0;
+  .allow-color {
+    .nav-link:hover {
+      background-color: #878383;
+      color: white;
+    }
+  }
+  .nav-link {
+    height: 56px;
+    padding: 16px;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+
+  }
+  -webkit-transition: box-shadow 0.3s linear;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s linear;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.right-pre-nav {
+  @include float-right;
+  padding-right: 50px;
+  p {
+    margin: 0;
+  }
+}
+
+.navbar-padding {
+  position: fixed;
+}
